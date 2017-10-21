@@ -87,6 +87,7 @@
   cp gstreamer_webcam.service /lib/systemd/system
   systemctl enable gstreamer_webcam.service
   systemctl start  gstreamer_webcam.service
+  systemctl status gstreamer_webcam.service
   # systemctl stop  gstreamer_webcam.service
 ```
 

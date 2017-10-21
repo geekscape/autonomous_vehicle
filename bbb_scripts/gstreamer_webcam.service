@@ -12,7 +12,7 @@ After=bb-wl18xx-wlan0.service
 
 [Service]
 Type=forking
-ExecStart=/home/debian/scripts/gstreamer_webcam.sh
+ExecStart=/home/debian/autonomous_vehicle/bbb_scripts/gstreamer_webcam.sh
 GuessMainPID=no
 RemainAfterExit=yes
 StandardOutput=null
