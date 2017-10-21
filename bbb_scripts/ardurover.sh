@@ -2,12 +2,14 @@
 #
 # Usage
 # ~~~~~
-# - sudo ~debian/scripts/ardurover.sh
-# - sudo ~debian/scripts/set_servo.sh 1
+# - sudo ~debian/autonomous_vehicle/bbb_scripts/ardurover.sh
+# - sudo ~debian/autonomous_vehicle/bbb_scripts/set_servo.sh 1
 
 HOST_NAME=nomad.local
 HOST_IP=127.0.0.1
 LOG_FILE=~debian/log/ardurover.log
+
+mkdir -p ~debian/log
 
 # if [ "$USER" != "root" ]; then
 #   echo "Error: ardurover.sh must be run as superuser"
@@ -59,7 +61,7 @@ echo "Disabling servo power rail"
 set_servo 0
 ( sleep 5;
   echo "Enabling servo power rail"
-  /home/debian/scripts/set_servo.sh 1
+  /home/debian/autonomous_vehicle/bbb_scripts/set_servo.sh 1
 ) &
 
 /bin/echo uart >/sys/devices/platform/ocp/ocp\:P9_21_pinmux/state
