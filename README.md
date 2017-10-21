@@ -82,6 +82,14 @@
   ./gstreamer_webcam.sh
 ```
 
+```
+  cd bbb_scripts
+  cp gstreamer_webcam.service /lib/systemd/system
+  systemctl enable gstreamer_webcam.service
+  systemctl start  gstreamer_webcam.service
+  # systemctl stop  gstreamer_webcam.service
+```
+
 ### Laptop software installation
 
 #### Install GStreamer and video scripts
