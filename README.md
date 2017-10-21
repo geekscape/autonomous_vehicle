@@ -63,6 +63,18 @@
   apt-get autoremove
 ```
 
+#### Install ArduRover
+
+```
+  apt-get install -y ardupilot-rover-blue
+  cd bbb_scripts
+  cp ardurover.service /lib/systemd/system
+  systemctl enable ardurover.service
+  systemctl start  ardurover.service
+  systemctl status ardurover.service
+  # systemctl stop  ardurover.service
+```
+
 #### Install GStreamer and video scripts
 
 ```

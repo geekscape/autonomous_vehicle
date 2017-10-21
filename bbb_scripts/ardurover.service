@@ -1,0 +1,23 @@
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+
+[Unit]
+Description=ArduRover service
+After=bb-wl18xx-wlan0.service
+# After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/debian/autonomous_vehicle/bbb_scripts/ardurover.sh
+GuessMainPID=no
+RemainAfterExit=yes
+StandardOutput=null
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
+Alias=ardurover.service
