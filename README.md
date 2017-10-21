@@ -16,6 +16,32 @@
 
 #### Configure Wi-Fi
 
+```
+  connmanctl
+    scan wifi
+    services
+    agent on
+    connect wifi_????????????_??????????????????_managed_psk
+      Passphrase? ????????
+      Connected wifi_????????????_??????????????????_managed_psk
+    exit
+  ping google.com
+```
+
+```
+  service hostapd stop
+  service hostapd disable
+  service hostapd status
+  apt-get remove hostapd 
+```
+
+```
+  vi /etc/hostname  # beaglebone -> UNIQUE_HOST_NAME
+  vi /etc/hosts     # beaglebone -> UNIQUE_HOST_NAME
+  reboot
+  iwconfig wlan0 power off
+```
+
 #### Debian (Linux operating system)
 ```
   apt-get update
@@ -35,4 +61,37 @@
   apt-get purge
   apt-get autoclean
   apt-get autoremove
+```
+
+#### Install GStreamer and video scripts
+
+```
+  apt-get install gstreamer-1.0 gstreamer1.0-tools
+  apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good
+  apt-get install gstreamer1.0-plugins-bad  gstreamer1.0-plugins-ugly
+
+  v4l2-ctl --list-devices
+    USB 2.0 Camera (usb-musb-hdrc.1.auto-1):
+      /dev/video0
+```
+
+```
+  cd bbb_scripts
+  vi gstreamer_webcam.sh
+    REMOTE_HOST=CHANGE_ME.local
+  ./gstreamer_webcam.sh
+```
+
+### Laptop software installation
+
+#### Install GStreamer and video scripts
+
+```
+  brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly gst-libav
+  brew install gst-plugins-bad
+```
+
+```
+  cd src
+  ./video_display.sh
 ```
