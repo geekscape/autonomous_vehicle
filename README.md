@@ -1,15 +1,16 @@
 # Self-driving (scale model) car project
 
-<img src="nao_driving_car.jpg" alt="Nao robot driving RC car" style="width: 200px;" />
-
-<img src="nao_driving_car.jpg" alt="Two vehicles on the starting line" style="width: 200px;" />
+<div style="width:50%">
+  ![Nao robot driving RC car](doc/images/nao_driving_car.jpg)
+  ![Ready, Set, Go !](doc/images/two_cars_on_the_starting_line.jpg)
+</div>
 
 ## Hardware
 
 ### Bill Of Materials
 
 [Mark Wolfe](https://github.com/wolfeidau) has researched and created this
-[Bill of Materials](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4dDVcc-XSizIfDcnYqrwnpr3s2C9YOatZ-NBpMu1980PFuvVG0G8UBcrAg2bCNygeN5uCzEMGMFT9/pubhtml)
+[Bill Of Materials](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4dDVcc-XSizIfDcnYqrwnpr3s2C9YOatZ-NBpMu1980PFuvVG0G8UBcrAg2bCNygeN5uCzEMGMFT9/pubhtml)
 
 ## Software installation
 
