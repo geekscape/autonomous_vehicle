@@ -1,7 +1,6 @@
 # Self-driving (scale model) car project
 
-<img src="doc/images/nao_driving_car.jpg" alt="Nao robot driving RC car" style="width: 200px;"/>
-<img src="doc/images/two_cars_on_the_starting_line.jpg.jpg" alt="Two RC cars on the starting line" style="width: 200px;"/>
+<img src="doc/images/nao_driving_car.jpg" alt="Nao robot driving RC car" style="width: 200px;"/><img src="doc/images/two_cars_on_the_starting_line.jpg" alt="Two RC cars on the starting line" style="width: 200px;"/>
 
 ## Hardware
 
