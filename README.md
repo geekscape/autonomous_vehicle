@@ -1,9 +1,17 @@
 # Self-driving (scale model) car project
 
-<div style="width:50%">
-  ![Nao robot driving RC car](doc/images/nao_driving_car.jpg)
-  ![Ready, Set, Go !](doc/images/two_cars_on_the_starting_line.jpg)
-</div>
+![image alt <](doc/images/nao_driving_car.jpg)
+![image alt >](doc/images/two_cars_on_the_starting_line.jpg)
+
+img[alt$=">"] {
+  float:right;
+  max-width: 50%;
+}
+
+img[alt$="<"] {
+  float:left;
+  max-width: 50%;
+}
 
 ## Hardware
 
