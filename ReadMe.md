@@ -9,6 +9,8 @@
 [Mark Wolfe](https://github.com/wolfeidau) has researched and created this
 [Bill Of Materials](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4dDVcc-XSizIfDcnYqrwnpr3s2C9YOatZ-NBpMu1980PFuvVG0G8UBcrAg2bCNygeN5uCzEMGMFT9/pubhtml)
 
+### Hardware construction
+
 ## Software installation
 
 [Detailed software installation instructions](doc/software_install.md)
